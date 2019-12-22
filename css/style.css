@@ -1,4 +1,30 @@
+body{
+    background-color: #e6fcf5;
+}
+
 .title {
     font-weight: 100;
     font-size: 3em;
+}
+
+.loading{
+    visibility:hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.check{
+    position: absolute;
+    visibility:hidden;
+    z-index: 2;
+
+}
+
+.btn-success{
+    background-color: rgb(80, 188, 190);
+    border: rgb(80, 188, 190);
+}
+
+.btn-success:hover{
+    background-color: rgb(42, 121, 122);
 }

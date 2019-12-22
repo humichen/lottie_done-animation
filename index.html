@@ -5,21 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HelloLottie</title>
+    <title>Done Animation</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.12.3/bodymovin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.12.3/bodymovin.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.8/lottie.js"></script>
     <script src="./js/animation.js"></script>
 </head>
 
 <body>
     <div class="container">
-    <h1 class="title text-center">Lottie Animation</h1>
-    <div id="openingLottie" class="lottieanimation"></div>
-    <div class="button-layout">
-
+    <h1 class="title text-center "><strong>Done Animation</strong></h1>
+    <div>
+        <ul>
+            <li>請按start開始</li>
+            <li>每次loading的時間長短都會不太一樣</li>
+            <li>若要重來一遍請先按reset再按start</li>
+        </ul>
+        
+    </div>
+    <div class="button-layout row justify-content-center">
+        <button id="lottie-start" type="button" class="btn btn-success  mx-5 col-md-4">start</button>
+        <button id="lottie-reset" type="button" class="btn btn-success mx-5 col-md-4">reset</button>
+    </div>
+    <div class="row justify-content-center">
+         <div id="openingLottie" class="col-md-5 loading"></div>
+         <div id="openingLottie2" class="col-md-5 check"></div>
     </div>
 </div>
 </body>
